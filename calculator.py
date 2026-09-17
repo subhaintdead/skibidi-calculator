@@ -1,5 +1,10 @@
 import math
 
+yellow = "\033[0m"
+red = "\033[91m"
+magenta = "\033[95m"
+default = "\033[0m"
+
 
 def legit(a, b, operator):
     if operator == "+":
@@ -62,8 +67,12 @@ banner = r"""
 version = "v2.0.0"
 
 
-print(banner)
-print(f"skibidi calculator {version}, the least accurate arithmetic calculator")
+print(yellow + banner + default)
+print(
+    magenta
+    + f"skibidi calculator {version}, the least accurate arithmetic calculator"
+    + default
+)
 print("=" * 60)
 
 
@@ -74,12 +83,16 @@ b = int(input("enter the second number: "))
 print("-" * 60)
 
 if operator not in ["+", "-", "*", "/"]:
-    print("invalid operator")
+    print(red + "invalid operator" + default)
 else:
     legitnum = legit(a, b, operator)
 
     if operator == "/" and b == 0:
-        print("bro you cant divide by 0(even the fakest clculator has limits gng)")
+        print(
+            red
+            + "bro you cant divide by 0(even the fakest clculator has limits gng)"
+            + default
+        )
     else:
         skibidinum = skibidimath(a, b, operator, legitnum)
         skibidinum = round(skibidinum, 2)
