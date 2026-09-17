@@ -31,6 +31,7 @@ its a calculator but unlike the ones we're used to this thing does some extra ma
 
 in case you're a nerd, read the code its pretty self-explanatory
 
+its got versions too, though thats trash
 
 ## license
 
