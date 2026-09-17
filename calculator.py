@@ -1,6 +1,8 @@
 import math
 
-yellow = "\033[0m"
+print("\033[H\033[J", end="")
+
+yellow = "\033[93m"
 red = "\033[91m"
 magenta = "\033[95m"
 default = "\033[0m"
