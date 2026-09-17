@@ -1,7 +1,7 @@
-# this is gonna be some calculator that gives a different answer than it should. lets see how it works (its been like a year i havent used python, and i think i may have alzheimers, let me relearn the keywords and stuff, its gonna take not much time)
+# this is gonna be some calculator that gives a different answer than it should using some gibberish formula
 
 
-def legitstuff(a, b, operator):
+def legit(a, b, operator):
     if operator == "+":
         return a + b
     elif operator == "-":
@@ -17,9 +17,45 @@ def legitstuff(a, b, operator):
         return "gng that aint a operator"
 
 
+# now the skibidi calculation
+
+
+def dsum(n):  # digits sum, in case i forget it later
+    total = 0
+    for banana in str(int(n)):
+        total += int(banana)
+    return total
+
+
+def skibidimath(a, b, operator, legitnum):
+
+    # rizz time
+
+    rizz = (
+        dsum(a) * 6.8 + dsum(b) * 3 - 6.7
+    ) % 13  # 6.8 specifically cuz its the number between six-seven and 69
+
+    if operator == "+":
+        skibidinum = legitnum + rizz - 5
+    elif operator == "-":
+        skibidinum = legitnum - rizz + 3
+    elif operator == "/":
+        skibidinum = legitnum + (rizz / 4) + 1.5
+    elif operator == "*":
+        skibidinum = legitnum + (rizz * 4) - 2
+    else:
+        skibidinum = legitnum
+    return skibidinum
+
+
 a = int(input("enter the first number: "))
 operator = input("enter the operator: ")
 b = int(input("enter the second number: "))
 
-result = legitstuff(a, b, operator)
-print(result)
+if operator not in ["+", "-", "*", "/"]:
+    print("invalid operator")
+
+legitnum = legit(a, b, operator)
+
+skibidinum = skibidimath(a, b, operator, legitnum)
+print(skibidinum)
