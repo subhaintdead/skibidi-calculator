@@ -10,7 +10,7 @@ def legit(a, b, operator):
         return a * b
     elif operator == "/":
         if b == 0:
-            return "gng u cant divide by 0"
+            return None
         else:
             return a / b
     else:
@@ -44,7 +44,7 @@ def skibidimath(a, b, operator, legitnum):
     return skibidinum
 
 
-banner = r""""
+banner = r"""
 
  ____   _     _  _      _      _  _                     
 / ___| | | __(_)| |__  (_)  __| |(_)                    
