@@ -18,6 +18,7 @@ python calculator.py
 
 then you'll get asked to enter the first number, operator and then the second number
 
+if you want a free vm to try this out, copy the command, and go to [here](https://subhaintdead.github.io/true-terminal) and click linux to spin up a temporary vm.
 
 ## supported operators
 
