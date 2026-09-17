@@ -33,7 +33,7 @@ def skibidimath(a, b, operator, legitnum):
 
     rizz = (
         dsum(a) * 6.8 + dsum(b) * 3 - 6.7
-    ) % 13  # 6.8 specifically cuz its the number between six-seven and 69
+    ) % 13  # 6.8 specifically cuz 68 is the number between six-seven and 69 divided by 10
 
     if operator == "+":
         skibidinum = legitnum + rizz - 5
@@ -58,4 +58,7 @@ if operator not in ["+", "-", "*", "/"]:
 legitnum = legit(a, b, operator)
 
 skibidinum = skibidimath(a, b, operator, legitnum)
+skibidinum = round(skibidinum, 2)
+if skibidinum == legitnum:
+    skibidinum += 1
 print(skibidinum)
