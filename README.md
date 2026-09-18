@@ -11,10 +11,10 @@ copy and paste into your terminal:
 ```bash
 git clone https://github.com/subhaintdead/skibidi-calculator
 cd skibidi-calculator
-python calculator.py
+python3 calculator.py
 ```
 
-(use "python3" if it says "python aint a command")
+
 
 then you'll get asked to enter the first number, operator and then the second number
 
